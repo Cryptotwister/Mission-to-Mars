@@ -116,10 +116,11 @@ def hemispheres(browser):
         hemisphere['title'] = browser.find_by_css('h2.title').text
     
         hemisphere_image_urls.append(hemisphere)
-            # Finally, we navigate backwards
+        
+        # Finally, we navigate backwards
         browser.back()
 
-# 4. Print the list that holds the dictionary of each image url and title.
+    # 4. Print the list that holds the dictionary of each image url and title.
     return hemisphere_image_urls
 
 
